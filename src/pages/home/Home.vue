@@ -14,7 +14,11 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import axios from 'axios'
+=======
+import HomeWeekend from './components/Weekend'
+>>>>>>> home-weekend
 =======
 import HomeWeekend from './components/Weekend'
 >>>>>>> home-weekend
@@ -24,6 +28,7 @@ export default {
         HomeHeader,
         HomeSwiper,
         HomeIcons,
+<<<<<<< HEAD
 <<<<<<< HEAD
         HomeRecommend
     },
@@ -39,6 +44,10 @@ export default {
     },
     mounted () {
         this.getHomeInfo()
+=======
+        HomeRecommend,
+        HomeWeekend
+>>>>>>> home-weekend
 =======
         HomeRecommend,
         HomeWeekend
