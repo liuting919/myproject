@@ -11,15 +11,15 @@ export default {
     cities: Object
   },
   computed: {
-    letters() {
+    letters () {
       const letters = []
-      for (let i in this.cities){
+      for (let i in this.cities) {
         letters.push(i)
       }
       return letters
     }
   },
-  data() {
+  data () {
     return {
       touchStatus: false,
       startY: 0,
@@ -37,16 +37,16 @@ export default {
       this.touchStatus = true
     },
     handleTouchMove (e) {
-      if (this.touchStatus){
+      if (this.touchStatus) {
         if (this.timer) {
           clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 74
           const index = Math.floor((touchY - this.startY) / 20)
-          if (index>= 0 && index < this.letters.length){
+          if (index >= 0 && index < this.letters.length) {
             this.$emit('change', this.letters[index])
-        }
+          }
         }, 16)
       }
     },

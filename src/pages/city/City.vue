@@ -35,7 +35,7 @@ export default {
     },
     handleGetCityInfoSucc (res) {
       res = res.data
-      if(res.ret && res.data){
+      if (res.ret && res.data) {
         const data = res.data
         this.cities = data.cities
         this.hotCities = data.hotCities

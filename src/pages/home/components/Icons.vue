@@ -28,10 +28,10 @@ export default {
   },
   computed: {
     pages () {
-      const pages =[]
+      const pages = []
       this.list.forEach((item, index) => {
-        const page = Math.floor(index/8)
-        if(!pages[page]){
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
           pages[page] = []
         }
         pages[page].push(item)
@@ -56,9 +56,9 @@ export default {
       float left
       width: 25%
       height: 0
-      padding-bottom: 25%    
+      padding-bottom: 25%
       .icon-img
-        position: absolute 
+        position: absolute
         top: 0
         left: 0
         right: 0
@@ -77,7 +77,7 @@ export default {
         height: .44rem
         line-height: .44rem
         text-align: center
-        color: $darkTextColor    
+        color: $darkTextColor
         ellipsis()
 
 </style>

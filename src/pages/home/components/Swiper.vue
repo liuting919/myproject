@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    showSwiper (){
+    showSwiper () {
       return this.list.length
     }
   }
@@ -43,6 +43,6 @@ export default {
     height: 0
     padding-bottom: 31.25%
     background: #eee
-    .swiper-img  
-      width: 100% 
+    .swiper-img
+      width: 100%
 </style>
